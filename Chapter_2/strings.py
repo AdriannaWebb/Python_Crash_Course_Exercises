@@ -61,7 +61,8 @@ print(favorite_language)
 '''
 #To trim a prefix, like the begining of a URL, you can use the .removeprefix('') method
 
+'''
 nostarch_url='https://nostarch.com'
 nostarch_url = nostarch_url.removeprefix('https://') #Uses the .removeprefix on the varaible to reassign the varable to the url without the prefix
 print(nostarch_url)
-
+'''
