@@ -55,12 +55,31 @@ cat_colors[1]='brown'
 print(cat_colors)
 ```
 
-### Adding Elements to a List
+### **Appending** Elements to a List
 
 **Appending** an element to the end of a list is the easiest way to add a new list element. You can use the .append() method after the list name to do this
 ```
 cat_colors.append('orange')
 ```
+The `.append()` method makes it easy to build lists dynamically. For example, you can start with an empty list and then add items to the list using a series of `.append()` calls.
+```
+motorcycles=[] #Empty list to start
+
+motorcycles.append('honda')
+motorcycles.append('yamaha')
+motorcycles.append('suzuki')
+```
+### **Inserting** Elements into a list
+ You can add a new element at any positon in your list by using the `.insert()` method. You do this by specifying the index of the new element and the new value
+```
+ motorcycles = ['honda', 'yamaha', 'suzuki'] 
+ 
+ motorcycles.insert(0, 'ducati') 
+ print(motorcycles)
+```
+Doing this shifts all of the other values to the left and inserts the value at the index specified 
+
+### **Deleting** Elements from a List
 
 
 
