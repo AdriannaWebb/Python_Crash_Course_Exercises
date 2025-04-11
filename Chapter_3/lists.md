@@ -55,7 +55,7 @@ cat_colors[1]='brown'
 print(cat_colors)
 ```
 
-### **Appending** Elements to a List
+### Appending Elements to a List
 
 **Appending** an element to the end of a list is the easiest way to add a new list element. You can use the .append() method after the list name to do this
 ```
@@ -69,7 +69,7 @@ motorcycles.append('honda')
 motorcycles.append('yamaha')
 motorcycles.append('suzuki')
 ```
-### **Inserting** Elements into a list
+### Inserting Elements into a list
  You can add a new element at any positon in your list by using the `.insert()` method. You do this by specifying the index of the new element and the new value
 ```
  motorcycles = ['honda', 'yamaha', 'suzuki'] 
@@ -79,7 +79,27 @@ motorcycles.append('suzuki')
 ```
 Doing this shifts all of the other values to the left and inserts the value at the index specified 
 
-### **Deleting** Elements from a List
+### Deleting Elements from a List
+The **del** statement
+If you know the index position of the item you want to remove you can use the `del` statement. Doing it this way deletes the list element entirely and you cannot access it after.
+```
+motorcycles = ['honda', 'yamaha', 'suzuki']
+print(motorcycles)
 
+del motorcycles[0]
+print(motorcycles)
+```
+The **pop()** method
+If you want to work with an item after it's removed from the list, you can use the `pop()` method
+The `pop()` method removes the last item in the list and then lets you work with it.
+The term pop comes from thinking of a list as a stack of items and popping one item off the top of the stack. In this analogy, the top of a stack corresponds to the end of a list.
+```
+motorcycles = ['honda', 'yamaha', 'suzuki']
+print(motorcycles)
+
+popped_motorcycle = motorcycles.pop()
+print(motorcycles)
+print(popped_motorcycle)
+```
 
 
