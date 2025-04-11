@@ -89,9 +89,9 @@ print(motorcycles)
 del motorcycles[0]
 print(motorcycles)
 ```
-The **pop()** method
-If you want to work with an item after it's removed from the list, you can use the `pop()` method
-The `pop()` method removes the last item in the list and then lets you work with it.
+The **.pop()** method
+If you want to work with an item after it's removed from the list, you can use the `.pop()` method
+The `.pop()` method removes the last item in the list and then lets you work with it.
 The term pop comes from thinking of a list as a stack of items and popping one item off the top of the stack. In this analogy, the top of a stack corresponds to the end of a list.
 ```
 motorcycles = ['honda', 'yamaha', 'suzuki']
@@ -101,5 +101,36 @@ popped_motorcycle = motorcycles.pop()
 print(motorcycles)
 print(popped_motorcycle)
 ```
+#### Popping Items from Any Position in a List
+If you include the index of the item you would like to pop between the parentheses, you can pop any item, not only the last one.
+```
+motorcycles = ['honda', 'yamaha', 'suzuki']
+
+first_owned = motorcycles.pop(0)
+print(f"The first motorcycle I owned was a {first_owned.title()}.")
+```
+#### Removing an Item by Value
+If you don't know the index of an item, you can use the `.remove()` method. In the following example, the motorcycles list is created and printed. Then the .remove() method is used by calling the motorcycles list followed by the `.remove()` method with the value to be removed inside of the parenthese.
+```
+motorcycles = ['honda', 'yamaha', 'suzuki', 'ducati']
+print(motorcycles)
+
+motorcycles.remove('ducati')
+print(motorcycles)
+```
+Similar to the `pop()` method, you can use the remove method to work with the value that's being removed from a list but assigning the list element you want to remove to a variable and then calling the variable in between the remove method parentheses instead of the actual list element value.
+```
+motorcycles = ['honda', 'yamaha', 'suzuki', 'ducati']
+print(motorcycles)
+
+too_expensive = 'ducati'
+motorcycles.remove(too_expensive) print(motorcycles)
+print(f"\nA {too_expensive.title()} is too expensive for me.")
+```
+The `remove()` method deletes only the first occurrence of the value, if there is more than one you'll need to use a for loop to make sure they're all gone. 
+
+
+
+
 
 
