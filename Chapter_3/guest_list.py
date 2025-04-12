@@ -61,6 +61,8 @@ print(f'{uninvited.title()},I am sorry to inform you that you can no longer atte
 uninvited = guest_list.pop(2)
 print(f'{uninvited.title()}, I am sorry to inform you that you can no longer attend the dinner.')
 
+print(f'I am inviting {len(guest_list)} people for dinner')
+
 for i in guest_list:
     print(f'{i.title()}, You are still formally invited to finner on 12/1/2025. Please let me know if you can attend')
 
