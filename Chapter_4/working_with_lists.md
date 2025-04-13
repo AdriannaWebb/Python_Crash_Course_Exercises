@@ -166,3 +166,4 @@ print(squares)
 ```
 after creating the list name, the square brackerts tell Python it will be a list, then the expression for the values you want to store in the new list is defined. Then the for loop is created with the for statement and followed by `value in range(1,11).
 This code does the exact same thing as the other ones, it is just more concise. 
+
